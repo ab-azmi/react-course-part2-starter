@@ -1,12 +1,5 @@
 import { useRef } from 'react';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Todo } from './hooks/useTodos';
-import axios from 'axios';
 import useAddTodo from './hooks/useAddTodo';
-
-interface AddTodoContext {
-  previousTodos: Todo[];
-}
 
 const TodoForm = () => {
   const addTodo = useAddTodo(() => {
